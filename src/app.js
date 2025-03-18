@@ -10,7 +10,9 @@ app.use(cookieParser()); //from your server to access cookies from user browser 
 
 //import Routes
 import UserRoute from "./route/user.route.js";
+import YoutubeRoute from "./route/youtube.route.js"
 
 //declaration routes
 app.use("/user", UserRoute);
+app.use('/youtube',YoutubeRoute)
 export { app };
